@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>基于SpringBoot+Quartz+Mybatis+Druid的支持多数据源的定时调度任务Demo</title>
+      <link href="/post/b0798327.html"/>
+      <url>/post/b0798327.html</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> Quartz </tag>
+            
+            <tag> Mybatis </tag>
+            
+            <tag> Druid </tag>
+            
+            <tag> 多数据源配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/post/4a17b156.html"/>
       <url>/post/4a17b156.html</url>
