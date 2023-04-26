@@ -1366,7 +1366,7 @@ canvas:not(#ribbon-canvas),
   --pseudo-hover: #ff7242;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
-  --default-bg-color: #49b1f5;
+  --default-bg-color: rgba(255,255,255,0.7);
 }
 body {
   position: relative;
