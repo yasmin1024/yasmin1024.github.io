@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>基于SpringBoot+Quartz+Mybatis+Druid的支持多数据源的定时调度任务Demo</title>
+      <title>SpringBoot集成Mybatis和Quartz实现配置多数据源的定时调度任务项目</title>
       <link href="/post/b0798327.html"/>
       <url>/post/b0798327.html</url>
       
-        <content type="html"><![CDATA[<p>[TOC]</p>]]></content>
+        <content type="html"><![CDATA[<p>这篇文章是为了记录自己实现这个Demo的过程。</p><p>涉及到SpringBoot，Mybatis，Quartz，Mysql，Druid，日志框架使用SpringBoot默认集成的logback</p><h1 id="1-创建多模块Maven项目"><a href="#1-创建多模块Maven项目" class="headerlink" title="1.创建多模块Maven项目"></a>1.创建多模块Maven项目</h1><h1 id="2-Mybatis-Druid实现多数据源的动态切换"><a href="#2-Mybatis-Druid实现多数据源的动态切换" class="headerlink" title="2.Mybatis+Druid实现多数据源的动态切换"></a>2.Mybatis+Druid实现多数据源的动态切换</h1><h1 id="3-Quartz定时任务"><a href="#3-Quartz定时任务" class="headerlink" title="3.Quartz定时任务"></a>3.Quartz定时任务</h1>]]></content>
       
       
       <categories>

@@ -3158,11 +3158,11 @@ h1.page-title + .tag-cloud-list {
 #footer-wrap {
   position: relative;
   padding: 40px 20px;
-  color: var(--light-grey);
+  color: var(--font-color);
   text-align: center;
 }
 #footer-wrap a {
-  color: var(--light-grey);
+  color: #858585;
 }
 #footer-wrap a:hover {
   text-decoration: underline;
@@ -3713,7 +3713,7 @@ h1.page-title + .tag-cloud-list {
   overflow: hidden;
   margin-top: 40px;
   width: 100%;
-  background: #000;
+  background: #fff;
 }
 .layout > .recent-posts .pagination > * {
   display: inline-block;
@@ -3817,7 +3817,7 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   top: calc(50% - 7px);
   color: #f47466;
-  content: '\f0c1';
+  content: '\f863';
   line-height: 1;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
