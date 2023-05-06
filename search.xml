@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>使用logstash遇到的问题</title>
+      <link href="/post/b4a7fbd4.html"/>
+      <url>/post/b4a7fbd4.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-Logstash全量同步mysql数据至ElasticSearch的时候，数据同步成功，但是时间节点文件中的时间一直是默认的1970-01-01-08-00-00"><a href="#1-Logstash全量同步mysql数据至ElasticSearch的时候，数据同步成功，但是时间节点文件中的时间一直是默认的1970-01-01-08-00-00" class="headerlink" title="1. Logstash全量同步mysql数据至ElasticSearch的时候，数据同步成功，但是时间节点文件中的时间一直是默认的1970-01-01 08:00:00 "></a><font color = darkgreen>1. Logstash全量同步mysql数据至ElasticSearch的时候，数据同步成功，但是时间节点文件中的时间一直是默认的1970-01-01 08:00:00 </font></h2><p>logstash-plain.log中记录如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[2023-05-06T14:25:20,316][INFO ][logstash.inputs.jdbc     ][main][d643714d71a141790dd4197f962a0b893c2eda7eff08cbde604177b19b910137] (0.001802s) SELECT * from post where updateTime &gt; &#x27;1970-01-01 08:00:00&#x27; and updateTime &lt;= sysdate() order by updateTime desc</span><br><span class="line">[2023-05-06T14:25:20,318][WARN ][logstash.inputs.jdbc     ][main][d643714d71a141790dd4197f962a0b893c2eda7eff08cbde604177b19b910137] tracking_column not found in dataset. &#123;:tracking_column=&gt;&quot;updateTime&quot;&#125;</span><br></pre></td></tr></table></figure><p>找不到字段updateTime，所以时间节点文件一直不更新。</p><p><strong>原因：</strong> logstash不支持驼峰字段，需要全部小写，将配置文件中的tracking_column 修改为updatetime</p><h2 id="2-更新至ElasticSearch后，-timestamp与当前时间相差8小时"><a href="#2-更新至ElasticSearch后，-timestamp与当前时间相差8小时" class="headerlink" title="2.更新至ElasticSearch后，@timestamp与当前时间相差8小时"></a><font color = darkgreen>2.更新至ElasticSearch后，@timestamp与当前时间相差8小时</font></h2><p>还未解决</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ElasticSearch </tag>
+            
+            <tag> Logstash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Canal1.1.5无法连接到MySQL8的解决方案</title>
       <link href="/post/608baaff.html"/>
       <url>/post/608baaff.html</url>
